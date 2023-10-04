@@ -102,13 +102,13 @@ body.dark {
 
 .main{
     display: grid;
-    padding: 2em;
     gap: 0.5em;
 }
 
 @media screen and (min-width:720px){
     .main{
         grid-template-columns: min-content 1fr;
+        padding: 2em;
     }
 }
 
