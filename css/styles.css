@@ -8,7 +8,6 @@
     --skills-bar-length: 0%;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -24,12 +23,12 @@ img{
 }
 
 body {
+    width: fit-content;
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: var(--transition);
     font-family: sans-serif;
-    width: 100vw;
 }
 
 body.dark {
@@ -42,14 +41,11 @@ body.dark {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 75px;
+    height: 75px;
     padding: 0 1.5em;
     background-color: var(--bg-card-color);
     transition: var(--transition);
-    width: 100%;
-  }
-  
-
+}
 
 .switches {
     display: flex;
@@ -357,7 +353,7 @@ svg {
 }
 
 .experience__img {
-    max-width: 50%;
+    max-width: 450px;
     margin-right: 1em;
 }
 
