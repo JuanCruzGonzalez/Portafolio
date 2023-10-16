@@ -20,3 +20,29 @@ toggleTheme.addEventListener('click',()=>{
 toggleColors.addEventListener('click',(e)=>{
     rootStyles.setProperty('--primary-color', e.target.dataset.color);
 })
+
+
+function esDispositivoMovil() {
+    return window.innerWidth <= 768; // Cambia el valor según tu definición de "móvil"
+  }
+  
+  function cambiarImagenSegunDispositivo() {
+    const contenedor = document.querySelector('.experience');
+    const imagenDesktop = document.querySelector('.desktop-image');
+    const imagenMovil = document.querySelector('.mobile-image');
+  
+    if (esDispositivoMovil()) {
+      imagenDesktop.style.display = 'none';
+      imagenMovil.style.display = 'block';
+    } else {
+      imagenDesktop.style.display = 'block';
+      imagenMovil.style.display = 'none';
+    }
+  }
+  
+  // Llama a la función para cambiar la imagen inicialmente
+  cambiarImagenSegunDispositivo();
+  
+  // Agrega un evento para cambiar la imagen cuando el tamaño de la ventana cambia
+  window.addEventListener('resize', cambiarImagenSegunDispositivo);
+  

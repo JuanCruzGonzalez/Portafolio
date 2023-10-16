@@ -8,6 +8,7 @@
     --skills-bar-length: 0%;
 }
 
+
 * {
     box-sizing: border-box;
 }
@@ -28,6 +29,7 @@ body {
     color: var(--text-color);
     transition: var(--transition);
     font-family: sans-serif;
+    width: 100vw;
 }
 
 body.dark {
@@ -40,11 +42,14 @@ body.dark {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 75px;
+    min-height: 75px;
     padding: 0 1.5em;
     background-color: var(--bg-card-color);
     transition: var(--transition);
-}
+    width: 100%;
+  }
+  
+
 
 .switches {
     display: flex;
@@ -164,7 +169,7 @@ body.dark {
 /*PROYECTOS*/
 
 @media screen and (min-width:720px) {
-    .card--project{
+    .card--project, .card--estudios{
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-column: 1 / -1;
@@ -375,6 +380,18 @@ svg {
 
 .icon{
     margin-right: 1em;
+}
+
+.tech__used {
+    display: flex;
+}
+
+.tech__used svg{
+    margin-right: 1em;
+}
+
+.experience a{
+    margin-top: 2em;
 }
 
 @keyframes skills__bar-fill {
