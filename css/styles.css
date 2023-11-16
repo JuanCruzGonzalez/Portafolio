@@ -23,7 +23,7 @@ img{
 }
 
 body {
-    width: fit-content;
+    width: auto;
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -108,6 +108,7 @@ body.dark {
 
 @media screen and (min-width:720px){
     .main{
+        display: grid;
         grid-template-columns: min-content 1fr;
         padding: 2em;
     }
@@ -116,8 +117,16 @@ body.dark {
 
 @media screen and (min-width:720px){
     .column--left{
+        max-width: 100vw;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(1, min-content);
+    }
+    
+}
+
+@media screen and (max-width:719px) {
+    .column--right, .column--left{
+        max-width: 100vw;
     }
 }
 
@@ -271,6 +280,17 @@ svg {
     margin-bottom: 0.5em;
 }
 
+@media screen and (max-width:719px) {
+    .skills__bar, .skills__bar::after{
+        width: 130px !important;
+    }
+    .skills__bar::after{
+        left: -130px !important;
+    }
+    .skills__header{
+        width: 130px !important;
+    }
+}
 .skills__bar{
     margin-left: 5em;
 }
@@ -331,30 +351,38 @@ svg {
 .skills__bar--100::after{
     --skills-bar-length: 100%;
 }
-
+@media screen and (max-width:719px) {
+    .tech__used{
+        display: block !important;
+    }
+    .tech__used p{
+        margin-bottom: 10px;
+    }
+}
 /*Experiencia*/
 @media screen and (max-width:719px) {
     .experience{
+        display: flex;
         flex-direction: column;
     }
-    .experience__img{
-        min-width: 100%;
+    .experience__img {
+        position: relative;
+        max-width: 100%;
     }
 }
-
+@media screen and (min-width:720px) {
+    .experience__img {
+        position: absolute;
+        right: 60px;
+        max-width: 250px;
+    }
+}
 .experience {
-    display: flex;
-    align-items: start;
     margin-bottom: 1em;
     padding: 1em;
     border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
     transition: var(--transition);
-}
-
-.experience__img {
-    max-width: 450px;
-    margin-right: 1em;
 }
 
 .experience__time {
@@ -370,6 +398,7 @@ svg {
 }
 
 .experience__description {
+    max-width: 450px;
     font-size: 0.8rem;
     margin-bottom: 0.5em;
 }
