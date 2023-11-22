@@ -162,7 +162,7 @@ body.dark {
 }
 
 .card__image-container{
-    min-width: 240px;
+    min-width: 280px;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
