@@ -141,92 +141,301 @@
         </div>
       </article>
       <article class="card card--experience">
-        <h2 class="card__title">Proyectos</h2>
-        <article class="card card--project">
-          <div class="card__image-container">
-            <img src="assets/images/LogoBuenSabor.jpg" alt="Buen Sabor project" class="card__image cars__image">
+        <div class="estudios__header">
+            <h2 class="estudios__title">Proyectos Personales</h2>
+            <p class="estudios__subtitle">Implementación de mis conocimientos</p>
+        </div>
+        <article class="card__project">
+          <div class="card__image-project-container">
+            <img src="assets/images/LogoBuenSabor.jpg" alt="El Buen Sabor - Sistema de Gestión Gastronómica"
+              class="card__image-project">
           </div>
+
           <div class="project">
-            <div class="project__tags">
-              <span class="project__tag">React</span>
-              <span class="project__tag">Spring Boot</span>
-              <span class="project__tag">MySQL</span>
-              <span class="project__tag">Firebase</span>
-              <span class="project__tag">Cloudinary</span>
-              <span class="project__tag">Mercado Pago</span>
+            <div class="project__header">
+              <h1 class="project__title">El Buen Sabor</h1>
+              <p class="project__subtitle">Sistema Integral de Gestión Gastronómica con Delivery</p>
+
+              <div class="project__tags">
+                <span class="project__tag project__tag--primary">React</span>
+                <span class="project__tag project__tag--primary">Spring Boot</span>
+                <span class="project__tag project__tag--secondary">MySQL</span>
+                <span class="project__tag project__tag--accent">Firebase Auth</span>
+                <span class="project__tag project__tag--accent">Cloudinary</span>
+                <span class="project__tag project__tag--secondary">Mercado Pago API</span>
+                <span class="project__tag project__tag--accent">REST API</span>
+              </div>
             </div>
-            <h2 class="card__title cars">El Buen Sabor</h2>
-            <p class="card__text">
-              Proyecto Final de la Tecnicatura Universitaria en Programación.
-              Sistema integral para un emprendimiento gastronómico con delivery,
-              que digitaliza la atención al cliente y optimiza la gestión interna.
-              Incluye portal web responsive para pedidos, panel administrativo,
-              gestión de stock, facturación, reportes y pagos online con Mercado Pago.
-            </p>
+
+            <div class="project__description">
+              <strong>Proyecto Final de Tecnicatura Universitaria en Programación</strong> desarrollado como una
+              solución completa para emprendimientos gastronómicos. Sistema web full-stack que digitaliza y optimiza
+              tanto la atención al cliente como las operaciones internas, ofreciendo una experiencia ágil y
+              personalizada mediante tecnología moderna.
+            </div>
+
+            <div class="project__metrics">
+              <div class="metric__item">
+                <div class="metric__number">34</div>
+                <div class="metric__label">Historias de Usuario</div>
+              </div>
+              <div class="metric__item">
+                <div class="metric__number">10</div>
+                <div class="metric__label">Módulos del Sistema</div>
+              </div>
+              <div class="metric__item">
+                <div class="metric__number">5</div>
+                <div class="metric__label">Roles de Usuario</div>
+              </div>
+              <div class="metric__item">
+                <div class="metric__number">100%</div>
+                <div class="metric__label">Responsive</div>
+              </div>
+            </div>
+
+            <div class="project__features">
+              <h3 class="project__features-title">🚀 Características Principales</h3>
+              <div class="features__grid">
+                <div class="feature__item">
+                  <div class="feature__icon">🛒</div>
+                  <div class="feature__content">
+                    <div class="feature__name">E-commerce Completo</div>
+                    <div class="feature__description">Catálogo, carrito, checkout con Mercado Pago y seguimiento de
+                      pedidos en tiempo real</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">👥</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Sistema de Roles</div>
+                    <div class="feature__description">Cliente, Cajero, Cocinero, Delivery y Administrador con permisos
+                      específicos</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">📊</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Business Intelligence</div>
+                    <div class="feature__description">Reportes dinámicos, rankings de productos/clientes y análisis de
+                      movimientos monetarios</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">🔄</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Gestión de Stock</div>
+                    <div class="feature__description">Control automático de inventario con validación de disponibilidad
+                      en tiempo real</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">🧾</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Sistema de Facturación</div>
+                    <div class="feature__description">Generación automática de facturas y notas de crédito con envío por
+                      email</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">🏪</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Multi-modalidad</div>
+                    <div class="feature__description">Soporte para retiro en local (10% descuento) y delivery con
+                      seguimiento</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project__architecture">
+              <h3 class="architecture__title">⚙️ Arquitectura Técnica</h3>
+              <p style="margin: 0 0 16px 0; color: #6b7280;">
+                <strong>Frontend:</strong> Portal web responsive (React) + Panel administrativo diferenciado<br>
+                <strong>Backend:</strong> API REST con Spring Boot y base de datos MySQL<br>
+                <strong>Integraciones:</strong> Firebase Auth, Cloudinary, Mercado Pago Checkout
+              </p>
+              <div class="tech__grid">
+                <div class="tech__item">React.js</div>
+                <div class="tech__item">Spring Framework</div>
+                <div class="tech__item">MySQL</div>
+                <div class="tech__item">Firebase</div>
+                <div class="tech__item">Cloudinary</div>
+                <div class="tech__item">MP API</div>
+              </div>
+            </div>
+
             <div class="project__links">
-              <a href="https://main--precious-sundae-5b9f11.netlify.app/" target="_blank" class="button button--ghost">
-                Ver Proyecto
+              <a href="https://main--precious-sundae-5b9f11.netlify.app/" target="_blank"
+                class="button button--primary">
+                🌐 Ver Demostración
               </a>
-              <a href="https://github.com/mn204/ElBuenSabor/tree/main" target="_blank" class="button button--blue">
-                Repositorio
+              <a href="https://github.com/mn204/ElBuenSabor/tree/main" target="_blank" class="button button--secondary">
+                💻 Código Fuente
               </a>
             </div>
           </div>
         </article>
-        <article class="card card--project">
-          <div class="card__image-container">
-            <img src="assets/images/CarsLibrary.png" alt="CarsLibrary-project" class="card__image cars__image">
+        <article class="card__project">
+          <div class="card__image-project-container">
+            <img src="assets/images/CarsLibrary.png" alt="Cars Library - Catálogo Web de Vehículos"
+              class="card__image-project">
           </div>
+
           <div class="project">
-            <div class="project__tags">
-              <span class="project__tag">HTML</span>
-              <span class="project__tag">CSS</span>
-              <span class="project__tag">Python</span>
-              <span class="project__tag">Django</span>
+            <div class="project__header">
+              <h1 class="project__title">Cars Library</h1>
+              <p class="project__subtitle">Catálogo Digital de Vehículos con Django</p>
+
+              <div class="project__tags">
+                <span class="project__tag project__tag--frontend">HTML5</span>
+                <span class="project__tag project__tag--frontend">CSS3</span>
+                <span class="project__tag project__tag--backend">Python</span>
+                <span class="project__tag project__tag--backend">Django</span>
+              </div>
             </div>
-            <h2 class="card__title cars">Cars Libray</h2>
-            <p class="card__text">Este es un proyecto propio en el cual la base es una página en la cual se almacena
-              informacion sobre disferentes marcas y modelos de autos. El usuario puede consultar la pagina para poder
-              buscar lo que mas le interesa sobre un auto en particular. Esta pagina fue completamente diseñada por y
-              programa por mí.</p>
+
+            <div class="project__description">
+              Aplicación web desarrollada completamente de forma <strong>independiente</strong> que funciona como una
+              biblioteca digital especializada en automóviles. La plataforma permite a los usuarios explorar, buscar y
+              consultar información detallada sobre diferentes marcas y modelos de vehículos, ofreciendo una experiencia
+              de navegación intuitiva y organizada.
+            </div>
+
+            <div class="project__highlight">
+              <p class="highlight__text">Proyecto Personal Completo</p>
+              <div class="highlight__badge">Diseño y Desarrollo 100% Propio</div>
+            </div>
+
+            <div class="project__features">
+              <h3 class="project__features-title">⚡ Funcionalidades Principales</h3>
+              <div class="features__list">
+                <div class="feature__item">
+                  <div class="feature__icon">🔍</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Sistema de Búsqueda</div>
+                    <div class="feature__description">Búsqueda avanzada por marca, modelo y características específicas
+                    </div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">📱</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Diseño Responsive</div>
+                    <div class="feature__description">Interfaz adaptativa para escritorio, tablet y móvil</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">🚗</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Catálogo Detallado</div>
+                    <div class="feature__description">Información completa de marcas y modelos con especificaciones
+                      técnicas</div>
+                  </div>
+                </div>
+                <div class="feature__item">
+                  <div class="feature__icon">📊</div>
+                  <div class="feature__content">
+                    <div class="feature__name">Organización Intuitiva</div>
+                    <div class="feature__description">Navegación estructurada por categorías y filtros personalizables
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project__architecture">
+              <h3 class="tech-stack__title">🛠️ Arquitectura Técnica</h3>
+              <p style="margin: 0 0 16px 0; color: #6b7280;">
+                <strong>Frontend:</strong> Interfaz responsive construida con HTML5 semántico y CSS3 moderno<br>
+                <strong>Backend:</strong> Aplicación web con Django Framework y sistema de templates<br>
+                <strong>Base de Datos:</strong> SQLite (Django ORM) para gestión de datos de vehículos
+              </p>
+              <div class="tech__grid">
+                <div class="tech__item">HTML5</div>
+                <div class="tech__item">CSS3</div>
+                <div class="tech__item">Python</div>
+                <div class="tech__item">Django</div>
+                <div class="tech__item">SQLite</div>
+                <div class="tech__item">Django ORM</div>
+              </div>
+            </div>
+
             <div class="project__links">
-              <a href="https://main--precious-sundae-5b9f11.netlify.app/" class="button button--ghost">Cars Library</a>
-              <a href="https://github.com/JuanCruzGonzalez/CarsLibrary" target="_blank" class="button button--blue">
-                Repositorio
+              <a href="https://main--precious-sundae-5b9f11.netlify.app/" target="_blank"
+                class="button button--primary">
+                🌐 Ver Aplicación
+              </a>
+              <a href="https://github.com/JuanCruzGonzalez/CarsLibrary" target="_blank"
+                class="button button--secondary">
+                💻 Código Fuente
               </a>
             </div>
           </div>
         </article>
       </article>
-      <article class="card estudios">
-        <h2 class="card__title">Estudios</h2>
-        <article class="card card--estudios">
-          <div class="card__image-container">
-            <img src="assets/images/UTN.webp" alt="Estudios-school" class="card__image">
+      <article class="estudios__container">
+        <div class="estudios__header">
+          <h2 class="estudios__title">Formación Académica</h2>
+          <p class="estudios__subtitle">Fundamentos sólidos en tecnología y programación</p>
+        </div>
+
+        <div class="estudios__timeline">
+          <div class="education__item">
+            <div class="education__image-section">
+              <img src="assets/images/UTN.webp" alt="Universidad Tecnológica Nacional" class="education__image">
+              <div class="education__level-badge">UNIVERSITARIO</div>
+            </div>
+            <div class="education__content">
+              <div class="education__institution">Universidad Tecnológica Nacional - FRM</div>
+              <h3 class="education__degree">Tecnicatura Universitaria en Programación</h3>
+              <p class="education__description">
+                Carrera intensiva de 2 años enfocada en desarrollo de software y sistemas.
+                Formación práctica con metodologías modernas de desarrollo, bases de datos,
+                y gestión de proyectos tecnológicos. Incluye Trabajo Final Integrador y
+                orientación específica para inserción laboral inmediata.
+              </p>
+              <div class="education__highlights">
+                <span class="highlight__item">Desarrollo Full-Stack</span>
+                <span class="highlight__item">Base de Datos</span>
+                <span class="highlight__item">Metodologías Ágiles</span>
+                <span class="highlight__item">Proyecto Final</span>
+              </div>
+              <div class="education__status">
+                <div class="status__dot"></div>
+                Completado
+              </div>
+            </div>
           </div>
-          <div class="project">
-            <h2 class="card__title">Tecnicatura Universitaria en Programación</h2>
-            <p class="card__text">
-              - Carrera de 2 años en UTN – FRM<br>
-              - Programación, bases de datos y sistemas<br>
-              - Metodologías de desarrollo y gestión<br>
-              - Trabajo Final Integrador<br>
-              - Orientada a rápida inserción laboral
-            </p>
+
+          <div class="education__item">
+            <div class="education__image-section">
+              <img src="assets/images/TomasEdison.png" alt="Escuela Secundaria Tomás Alva Edison"
+                class="education__image">
+              <div class="education__level-badge">SECUNDARIO</div>
+            </div>
+            <div class="education__content">
+              <div class="education__institution">Escuela Secundaria Tomás Alva Edison</div>
+              <h3 class="education__degree">Bachillerato en Informática con Mención en Robótica</h3>
+              <p class="education__description">
+                Formación especializada que combinó conocimientos teóricos y prácticos en tecnología.
+                Primera aproximación a la programación mediante Arduino, implementando conceptos
+                fundamentales de lógica de programación e integración con hardware. También incluye
+                introducción a Python y bases de programación estructurada.
+              </p>
+              <div class="education__highlights">
+                <span class="highlight__item">Arduino</span>
+                <span class="highlight__item">Python Básico</span>
+                <span class="highlight__item">Robótica</span>
+                <span class="highlight__item">Hardware</span>
+                <span class="highlight__item">Lógica de Programación</span>
+              </div>
+              <div class="education__status">
+                <div class="status__dot"></div>
+                Completado
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="card card--estudios">
-          <div class="card__image-container">
-            <img src="assets/images/TomasEdison.png" alt="Estudios-school" class="card__image">
-          </div>
-          <div class="project">
-            <h2 class="card__title">Estudios Secundarios</h2>
-            <p class="card__text">Me egresé de la escula secundaria Tomas Alva Edison con mecion en robotica y
-              bachillerato en informatica. En esa estapa me introduje en la programacion empezando con Arduino,
-              implementando los conceptos basicos de programacion y ademas utilizando hardware. Tambien vi lo conceptos
-              basicos de Python.</p>
-          </div>
-        </article>
+        </div>
       </article>
       <article class="card card__hobbies__bottom">
         <h2 class="card__title">Hobbies</h2>
