@@ -177,7 +177,6 @@ body.dark {
 }
 
 .cars__image{
-    border-radius: 100px 10px;
     border: 1px solid #dfdfdf;
 }
 
@@ -265,6 +264,12 @@ body.dark {
     border: 1px solid var(--primary-color);
 }
 
+.button--blue{
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
 .project__tags{
     display: flex;
     justify-content: start;
@@ -272,6 +277,12 @@ body.dark {
     margin: 0.5em 0;
     font-size: 0.8rem;
     width: 230px;
+    width: 100%;
+}
+
+.project__links{
+    display: flex;
+    gap: 1em;
 }
 
 .project__tag{
@@ -286,6 +297,8 @@ body.dark {
 
 .skills{
     padding: 0.5em 0;
+    display: flex;
+    gap: 1em;
 }
 
 .skills__header{
