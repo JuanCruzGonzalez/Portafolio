@@ -1,427 +1,451 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <title>Porfolio - Juan Cruz Gonzalez</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="switches">
-      <div id="toggle-theme" class="toggle-theme">
-        <img id="toggle-icon" src="assets/icons/sun.svg" alt="icon theme" class="toggle-theme_icon">
-        <p id="toggle-text" class="toggle-theme_text">Dark Mode</p>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="column column--left">
-      <!-- Profile Card -->
-      <article class="modern-card">
-        <div class="modern-card__header">
-          <div class="profile__image-container">
-            <img src="assets/images/profile.jpg" alt="Juan Cruz Gonzalez" class="profile__image">
+<div class="export-wrapper">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=Geist:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portafolio - Juan Cruz Gonzalez</title>
+      <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container flex items-center justify-between">
+          <div class="flex items-center gap-2" data-media-type="banani-button">
+            <div class="logo-box">
+              /&gt;
+            </div>
+            <span class="font-bold logo-text">Juan Cruz Gonzalez</span>
           </div>
-          <div class="profile__info">
-            <h1 class="profile__name">Juan Cruz Gonzalez</h1>
-            <p class="profile__role">Front End Developer</p>
-          </div>
+
+          <button class="btn btn-outline" onclick="window.open('https://github.com/JuanCruzGonzalez', '_blank')" data-media-type="banani-button">
+            GitHub
+          </button>
         </div>
+      </header>
 
-        <div class="modern-card__content">
-          <div class="contact__grid">
-            <div class="contact__item">
-              <i class="fas fa-envelope contact__icon"></i>
-              <a href="mailto:juancgonzalez0901@gmail.com" class="contact__link">
-                juancgonzalez0901@gmail.com
-              </a>
+      <main>
+        <!-- Hero Section -->
+        <section class="container hero-section">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <div class="hero-badge-dot"></div>
+              Disponible para nuevas oportunidades
             </div>
-            <div class="contact__item">
-              <i class="fas fa-phone-alt contact__icon"></i>
-              <a href="tel:2615355139" class="contact__link">
-                2615355139
-              </a>
-            </div>
-          </div>
-
-          <div class="profile__description">
-            <p>Soy un programador el cual está empezando su camino. Busco siempre estar al día con las tecnologías que
+            <h1 class="hero-title">
+              Construyendo experiencias web <span>modernas</span> y
+              <span>funcionales</span>.
+            </h1>
+            <p class="hero-description">
+              Soy un programador que está empezando su camino. Busco siempre estar al día con las tecnologías que
               uso. Siempre busco formas para poder mejorar mis proyectos incluso cuando ya fueron terminados. Soy
-              estudiante de una carrera de Programación y estoy en busca de un trabajo.</p>
-          </div>
-        </div>
-      </article>
-      <!-- Skills Card -->
-      <article class="modern-card">
-        <div class="modern-card__header">
-          <h2 class="modern-card__title">Conocimientos</h2>
-        </div>
-        <div class="modern-card__content">
-          <div class="skills__grid">
-            <div class="skill__item">
-              <div class="skill__info">
-                <span class="skill__name">HTML</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="skill__icon">
-                  <path
-                    d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7"
-                    fill="#e34c26" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="skill__item">
-              <div class="skill__info">
-                <span class="skill__name">CSS</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="skill__icon">
-                  <path
-                    d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2"
-                    fill="#1572b6" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="skill__item">
-              <div class="skill__info">
-                <span class="skill__name">JavaScript</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="skill__icon">
-                  <path
-                    d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
-                    fill="#f0db4f" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="skill__item">
-              <div class="skill__info">
-                <span class="skill__name">Python</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="skill__icon">
-                  <path fill="#0277BD"
-                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" />
-                  <path fill="#FFC107"
-                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="skill__item">
-              <div class="skill__info">
-                <span class="skill__name">React</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="skill__icon">
-                  <path
-                    d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
-                    fill="#53C1DE" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537Z"
-                    fill="#53C1DE" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="skill__item">
-              <div class="skill__info">
-                <span class="skill__name">Java</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="skill__icon">
-                  <path fill="#F44336"
-                    d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z" />
-                  <path fill="#1565C0"
-                    d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055z" />
-                </svg>
-              </div>
+              estudiante de una carrera de Programación y estoy en busca de un trabajo.
+            </p>
+            <div class="flex gap-4">
+              <button
+                class="btn btn-primary btn-lg"
+                onclick="document.querySelector('.projects').scrollIntoView({ behavior: 'smooth' })"
+                data-media-type="banani-button"
+              >
+                Ver Proyectos
+              </button>
+              <button
+                class="btn btn-outline btn-lg"
+                onclick="window.open('https://github.com/JuanCruzGonzalez', '_blank')"
+                data-media-type="banani-button"
+              >
+                <iconify-icon
+                  icon="lucide:github"
+                  class="icon-md"
+                ></iconify-icon>
+                GitHub
+              </button>
             </div>
           </div>
-        </div>
-      </article>
-    </section>
+          <div class="hero-image-container">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Juan Cruz Gonzalez"
+              class="hero-image"
+            />
+          </div>
+        </section>
 
-    <section class="column column--right">
+        <!-- Skills Section -->
+        <section class="section section--muted">
+          <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <p class="section-subtitle">
+              Tecnologías y herramientas que utilizo para construir aplicaciones web.
+            </p>
 
+            <div class="skills-grid">
+              <!-- HTML -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--html">
+                  <iconify-icon
+                    icon="lucide:code"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">HTML</span>
+              </div>
 
-      <!-- Projects Section -->
-      <section class="section">
-        <div class="section__header">
-          <h2 class="section__title">Experiencia</h2>
-        </div>
+              <!-- CSS -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--css">
+                  <iconify-icon
+                    icon="lucide:palette"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">CSS</span>
+              </div>
 
-        <div class="section__content">
-          <!-- Instituto Crecer -->
-          <article class="project-card">
-            <div class="project-card__image-container">
-              <img
-                src="https://fundacioncrecercampus.com/pluginfile.php/162/mod_label/intro/Imagen%20de%20WhatsApp%202025-08-01%20a%20las%2015.40.50_d0eec220.jpg"
-                alt="El Buen Sabor - Sistema de Gestión Gastronómica" class="project-card__image">
+              <!-- JavaScript -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--javascript">
+                  <iconify-icon
+                    icon="lucide:file-json"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">JavaScript</span>
+              </div>
+
+              <!-- React -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--react">
+                  <iconify-icon
+                    icon="lucide:atom"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">React</span>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--java">
+                  <iconify-icon
+                    icon="lucide:coffee"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">Java</span>
+              </div>
+
+              <!-- Git -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--git">
+                  <iconify-icon
+                    icon="lucide:git-branch"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">Git &amp; GitHub</span>
+              </div>
+
+              <!-- Moodle -->
+              <div class="skill-card" data-media-type="banani-button">
+                <div class="skill-icon-wrapper skill-icon--moodle">
+                  <iconify-icon
+                    icon="lucide:graduation-cap"
+                    class="icon-lg"
+                  ></iconify-icon>
+                </div>
+                <span class="skill-name">Moodle</span>
+              </div>
             </div>
+          </div>
+        </section>
 
-            <div class="project-card__content">
-              <div class="project-card__header">
-                <h3 class="project-card__title">Instituto Crecer</h3>
-                <p class="project-card__subtitle">Plataforma de cursos para Colegio Primario</p>
+        <!-- Projects Section -->
+        <section class="section projects">
+          <div class="container">
+            <h2 class="section-title">Experiencia y Proyectos</h2>
+            <p class="section-subtitle">
+              Una selección de mis trabajos y proyectos destacados.
+            </p>
 
-                <div class="tag__container">
-                  <span class="tag tag--primary">Moodle</span>
+            <div class="projects-grid">
+
+                <!-- iPhone Page -->
+              <div class="project-card" data-media-type="banani-button">
+                <div class="project-image-wrapper">
+                  <img
+                    src="./assets/images/PanelIP.png"
+                    alt="iPhone Page"
+                    class="project-image"
+                  />
                 </div>
-              </div>
-
-              <div class="project-card__description">
-                <p>Implementación de una plataforma educativa en Moodle para un colegio primario, diseñada para
-                  organizar cursos por materias y aulas virtuales. Cada alumno accede a los contenidos subidos por su
-                  docente de forma simple y centralizada.</p>
-              </div>
-
-              <div class="metrics__grid">
-                <div class="metric__item">
-                  <div class="metric__number">+100</div>
-                  <div class="metric__label">Usuarios</div>
-                </div>
-                <div class="metric__item">
-                  <div class="metric__number">+20</div>
-                  <div class="metric__label">Aulas y materias</div>
-                </div>
-                <div class="metric__item">
-                  <div class="metric__number">100%</div>
-                  <div class="metric__label">Responsive</div>
-                </div>
-              </div>
-
-              <div class="tech__section">
-                <h4 class="tech__title">Entorno Tecnológico</h4>
-                <p class="tech__description">
-                  <strong>Plataforma:</strong> Moodle (CMS educativo)<br>
-                  <strong>Hosting:</strong> Servidor web con PHP y MySQL<br>
-                  <strong>Administración:</strong> Configuración de base de datos, backups automáticos, gestión de
-                  usuarios y permisos <br>
-                  <strong>Extensiones:</strong> Plugins y temas personalizados de Moodle
-                </p>
-              </div>
-              <!-- Aportes y logros -->
-              <div class="achievements">
-                <h4 class="achievements__title">Aportes y logros</h4>
-
-                <ul class="achievements__list">
-                  <li class="achievements__item">
-                    Configuración y personalización de Moodle para un entorno escolar (categorías, cursos y roles).
-                  </li>
-                  <li class="achievements__item">
-                    Estructura por materias y aulas virtuales con navegación simple para alumnos y docentes.
-                  </li>
-                  <li class="achievements__item">
-                    Diseño responsive y optimización de usabilidad en móviles.
-                  </li>
-                  <li class="achievements__item">
-                    Capacitación inicial a docentes y documentación básica de uso.
-                  </li>
-                  <li class="achievements__item">
-                    Gestión de hosting, base de datos y backups automáticos.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="project-card__actions">
-                <a href="https://fundacioncrecercampus.com/" target="_blank" class="btn btn--primary">
-                  🌐 Ver Demostración
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- Projects Section -->
-      <section class="section">
-        <div class="section__header">
-          <h2 class="section__title">Proyectos Personales</h2>
-          <p class="section__subtitle">Implementación de mis conocimientos</p>
-        </div>
-
-        <div class="section__content">
-          <!-- El Buen Sabor Project -->
-          <article class="project-card">
-            <div class="project-card__image-container">
-              <img src="assets/images/LogoBuenSabor.jpg" alt="El Buen Sabor - Sistema de Gestión Gastronómica"
-                class="project-card__image">
-            </div>
-
-            <div class="project-card__content">
-              <div class="project-card__header">
-                <h3 class="project-card__title">El Buen Sabor</h3>
-                <p class="project-card__subtitle">Sistema Integral de Gestión Gastronómica con Delivery</p>
-
-                <div class="tag__container">
-                  <span class="tag tag--primary">React</span>
-                  <span class="tag tag--primary">Spring Boot</span>
-                  <span class="tag tag--secondary">MySQL</span>
-                  <span class="tag tag--accent">Firebase Auth</span>
-                  <span class="tag tag--accent">Cloudinary</span>
-                  <span class="tag tag--secondary">Mercado Pago API</span>
-                  <span class="tag tag--accent">REST API</span>
-                </div>
-              </div>
-
-              <div class="project-card__description">
-                <p><strong>Proyecto Final de Tecnicatura Universitaria en Programación</strong> desarrollado como una
-                  solución completa para emprendimientos gastronómicos. Sistema web full-stack que digitaliza y optimiza
-                  tanto la atención al cliente como las operaciones internas, ofreciendo una experiencia ágil y
-                  personalizada mediante tecnología moderna.</p>
-              </div>
-
-              <div class="metrics__grid">
-                <div class="metric__item">
-                  <div class="metric__number">34</div>
-                  <div class="metric__label">Historias de Usuario</div>
-                </div>
-                <div class="metric__item">
-                  <div class="metric__number">10</div>
-                  <div class="metric__label">Módulos del Sistema</div>
-                </div>
-                <div class="metric__item">
-                  <div class="metric__number">5</div>
-                  <div class="metric__label">Roles de Usuario</div>
-                </div>
-                <div class="metric__item">
-                  <div class="metric__number">100%</div>
-                  <div class="metric__label">Responsive</div>
-                </div>
-              </div>
-
-              <div class="features__section">
-                <h4 class="features__title">Características Principales</h4>
-                <div class="features__grid">
-                  <div class="feature__item">
-                    <div class="feature__icon">🛒</div>
-                    <div class="feature__content">
-                      <div class="feature__name">E-commerce Completo</div>
-                      <div class="feature__description">Catálogo, carrito, checkout con Mercado Pago y seguimiento de
-                        pedidos en tiempo real</div>
-                    </div>
+                <div class="project-content">
+                  <h3 class="project-title">iPhone Page</h3>
+                  <p class="project-description">
+                    Sitema completo de administracion para un negocio incorporado con pagina e-commerce. Tecnologias usadas: React, Next.js, Supabase y Vercel. El sistema cuenta con un dashboard con metricas, registro de ventas, control de productos y su stock, promociones, pedidos, gastos, categorias, control de empleados y restricciones de acceso segun roles, manejo de informacion de clientes. El registro de clientes y empleados está incorporado con Auth0 de supabase.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">Next</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">Responsive Design</span>
                   </div>
-                  <div class="feature__item">
-                    <div class="feature__icon">👥</div>
-                    <div class="feature__content">
-                      <div class="feature__name">Sistema de Roles</div>
-                      <div class="feature__description">Cliente, Cajero, Cocinero, Delivery y Administrador con permisos
-                        específicos</div>
-                    </div>
-                  </div>
-                  <div class="feature__item">
-                    <div class="feature__icon">📊</div>
-                    <div class="feature__content">
-                      <div class="feature__name">Business Intelligence</div>
-                      <div class="feature__description">Reportes dinámicos, rankings de productos/clientes y análisis de
-                        movimientos monetarios</div>
-                    </div>
-                  </div>
-                  <div class="feature__item">
-                    <div class="feature__icon">📦</div>
-                    <div class="feature__content">
-                      <div class="feature__name">Gestión de Stock</div>
-                      <div class="feature__description">Control automático de inventario con validación de
-                        disponibilidad en tiempo real</div>
-                    </div>
+                  <div class="project-actions">
+                    <button
+                      class="btn btn-primary"
+                      onclick="window.open('https://iphone-page-gamma.vercel.app/', '_blank')"
+                      data-media-type="banani-button"
+                    >
+                      <iconify-icon
+                        icon="lucide:external-link"
+                        class="icon-sm"
+                      ></iconify-icon>
+                      Ver Sitio
+                    </button>
+                    <button
+                      class="btn btn-outline"
+                      onclick="window.open('https://github.com/JuanCruzGonzalez/IphonePage', '_blank')"
+                      data-media-type="banani-button"
+                    >
+                      <iconify-icon
+                        icon="lucide:github"
+                        class="icon-sm"
+                      ></iconify-icon>
+                      Ver Código
+                    </button>
                   </div>
                 </div>
               </div>
 
-              <div class="tech__section">
-                <h4 class="tech__title">Arquitectura Técnica</h4>
-                <p class="tech__description">
-                  <strong>Frontend:</strong> Portal web responsive (React) + Panel administrativo diferenciado<br>
-                  <strong>Backend:</strong> API REST con Spring Boot y base de datos MySQL<br>
-                  <strong>Integraciones:</strong> Firebase Auth, Cloudinary, Mercado Pago Checkout
-                </p>
-                <div class="tech__grid">
-                  <div class="tech__item">React.js</div>
-                  <div class="tech__item">Spring Framework</div>
-                  <div class="tech__item">MySQL</div>
-                  <div class="tech__item">Firebase</div>
-                  <div class="tech__item">Cloudinary</div>
-                  <div class="tech__item">MP API</div>
+              <!-- Instituto Crecer -->
+              <div class="project-card" data-media-type="banani-button">
+                <div class="project-image-wrapper">
+                  <img
+                    src="https://fundacioncrecercampus.com/pluginfile.php/162/mod_label/intro/Imagen%20de%20WhatsApp%202025-08-01%20a%20las%2015.40.50_d0eec220.jpg"
+                    alt="Instituto Crecer Moodle"
+                    class="project-image"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Instituto Crecer</h3>
+                  <p class="project-description">
+                    Implementación de una plataforma educativa en Moodle para un colegio primario, diseñada para
+                    organizar cursos por materias y aulas virtuales. Cada alumno accede a los contenidos subidos por su
+                    docente de forma simple y centralizada.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-pill">Moodle</span>
+                    <span class="tech-pill">PHP</span>
+                    <span class="tech-pill">MySQL</span>
+                    <span class="tech-pill">Hosting Web</span>
+                  </div>
+                  <div class="project-actions">
+                    <button
+                      class="btn btn-primary"
+                      onclick="window.open('https://fundacioncrecercampus.com/', '_blank')"
+                      data-media-type="banani-button"
+                    >
+                      <iconify-icon
+                        icon="lucide:external-link"
+                        class="icon-sm"
+                      ></iconify-icon>
+                      Ver Sitio
+                    </button>
+                  </div>
                 </div>
               </div>
 
-              <div class="project-card__actions">
-                <a href="https://github.com/mn204/ElBuenSabor/tree/main" target="_blank" class="btn btn--secondary">
-                  💻 Código Fuente
-                </a>
+              <!-- El Buen Sabor -->
+              <div class="project-card" data-media-type="banani-button">
+                <div class="project-image-wrapper">
+                  <img
+                    src="assets/images/LogoBuenSabor.jpg"
+                    alt="El Buen Sabor - Sistema de Gestión"
+                    class="project-image"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">El Buen Sabor</h3>
+                  <p class="project-description">
+                    Sistema integral de gestión gastronómica con e-commerce completo, carrito de compras, checkout con Mercado Pago,
+                    seguimiento de pedidos en tiempo real y panel administrativo. Proyecto Final de Tecnicatura Universitaria.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">Spring Boot</span>
+                    <span class="tech-pill">MySQL</span>
+                    <span class="tech-pill">Firebase Auth</span>
+                    <span class="tech-pill">Cloudinary</span>
+                    <span class="tech-pill">Mercado Pago</span>
+                  </div>
+                  <div class="project-actions">
+                    <button
+                      class="btn btn-outline"
+                      onclick="window.open('https://github.com/mn204/ElBuenSabor/tree/main', '_blank')"
+                      data-media-type="banani-button"
+                    >
+                      <iconify-icon
+                        icon="lucide:github"
+                        class="icon-sm"
+                      ></iconify-icon>
+                      Ver Código
+                    </button>
+                  </div>
+                </div>
               </div>
+
+              
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <!-- Education Section -->
-      <section class="section">
-        <div class="section__header">
-          <h2 class="section__title">Formación Académica</h2>
-          <p class="section__subtitle">Fundamentos sólidos en tecnología y programación</p>
-        </div>
+        <!-- Education Section -->
+        <section class="section section--spaced">
+          <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <p class="section-subtitle">
+              Fundamentos sólidos en tecnología y programación.
+            </p>
 
-        <div class="section__content">
-          <div class="education__timeline">
-            <div class="education__item">
-              <div class="education__image-section">
-                <img src="assets/images/UTN.webp" alt="Universidad Tecnológica Nacional" class="education__image">
-                <div class="education__level-badge">UNIVERSITARIO</div>
-              </div>
-              <div class="education__content">
-                <div class="education__institution">Universidad Tecnológica Nacional - FRM</div>
-                <h3 class="education__degree">Tecnicatura Universitaria en Programación</h3>
-                <p class="education__description">
-                  Carrera intensiva de 2 años enfocada en desarrollo de software y sistemas. Formación práctica con
-                  metodologías modernas de desarrollo, bases de datos, y gestión de proyectos tecnológicos. Incluye
-                  Trabajo Final Integrador y orientación específica para inserción laboral inmediata.
-                </p>
-                <div class="tag__container">
-                  <span class="tag tag--highlight">Desarrollo Full-Stack</span>
-                  <span class="tag tag--highlight">Base de Datos</span>
-                  <span class="tag tag--highlight">Metodologías Ágiles</span>
-                  <span class="tag tag--highlight">Proyecto Final</span>
+            <div class="education-timeline">
+              <!-- Universidad -->
+              <div class="education-item">
+                <div class="education-image-wrapper">
+                  <img
+                    src="assets/images/UTN.webp"
+                    alt="Universidad Tecnológica Nacional"
+                    class="education-image"
+                  />
+                  <div class="education-badge">
+                    UNIVERSITARIO
+                  </div>
                 </div>
-                <div class="education__status">
-                  <div class="status__dot"></div>
-                  Completado
+                <div class="education-content">
+                  <div class="education-institution">
+                    Universidad Tecnológica Nacional - FRM
+                  </div>
+                  <h3 class="education-degree">
+                    Tecnicatura Universitaria en Programación
+                  </h3>
+                  <p class="education-description">
+                    Carrera intensiva de 2 años enfocada en desarrollo de software y sistemas. Formación práctica con
+                    metodologías modernas de desarrollo, bases de datos, y gestión de proyectos tecnológicos.
+                  </p>
+                  <div class="education-tech-stack">
+                    <span class="tech-pill">Desarrollo Full-Stack</span>
+                    <span class="tech-pill">Base de Datos</span>
+                    <span class="tech-pill">Metodologías Ágiles</span>
+                    <span class="tech-pill">Proyecto Final</span>
+                  </div>
+                  <div class="education-status">
+                    <div class="status-dot"></div>
+                    Completado
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="education__item">
-              <div class="education__image-section">
-                <img src="assets/images/TomasEdison.png" alt="Escuela Secundaria Tomás Alva Edison"
-                  class="education__image">
-                <div class="education__level-badge">SECUNDARIO</div>
-              </div>
-              <div class="education__content">
-                <div class="education__institution">Escuela Secundaria Tomás Alva Edison</div>
-                <h3 class="education__degree">Bachillerato en Informática con Mención en Robótica</h3>
-                <p class="education__description">
-                  Formación especializada que combinó conocimientos teóricos y prácticos en tecnología. Primera
-                  aproximación a la programación mediante Arduino, implementando conceptos fundamentales de lógica de
-                  programación e integración con hardware. También incluye introducción a Python y bases de programación
-                  estructurada.
-                </p>
-                <div class="tag__container">
-                  <span class="tag tag--highlight">Arduino</span>
-                  <span class="tag tag--highlight">Python Básico</span>
-                  <span class="tag tag--highlight">Robótica</span>
-                  <span class="tag tag--highlight">Hardware</span>
-                  <span class="tag tag--highlight">Lógica de Programación</span>
+              <!-- Secundario -->
+              <div class="education-item">
+                <div class="education-image-wrapper">
+                  <img
+                    src="assets/images/TomasEdison.png"
+                    alt="Escuela Secundaria Tomás Alva Edison"
+                    class="education-image"
+                  />
+                  <div class="education-badge">
+                    SECUNDARIO
+                  </div>
                 </div>
-                <div class="education__status">
-                  <div class="status__dot"></div>
-                  Completado
+                <div class="education-content">
+                  <div class="education-institution">
+                    Escuela Secundaria Tomás Alva Edison
+                  </div>
+                  <h3 class="education-degree">
+                    Bachillerato en Informática con Mención en Robótica
+                  </h3>
+                  <p class="education-description">
+                    Formación especializada que combinó conocimientos teóricos y prácticos en tecnología. Primera
+                    aproximación a la programación mediante Arduino, implementando conceptos fundamentales de lógica de
+                    programación e integración con hardware.
+                  </p>
+                  <div class="education-tech-stack">
+                    <span class="tech-pill">Arduino</span>
+                    <span class="tech-pill">Python Básico</span>
+                    <span class="tech-pill">Robótica</span>
+                    <span class="tech-pill">Hardware</span>
+                  </div>
+                  <div class="education-status">
+                    <div class="status-dot"></div>
+                    Completado
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+          <div class="container">
+            <div class="contact-card">
+              <h2 class="section-title section-title--centered">
+                ¿Trabajamos juntos?
+              </h2>
+              <p class="text-muted section-text">
+                Actualmente estoy abierto a nuevas oportunidades de trabajo y
+                proyectos. Si tienes un proyecto en mente o buscas un
+                desarrollador Frontend, no dudes en contactarme.
+              </p>
+              <button
+                class="btn btn-primary btn-xl"
+                onclick="window.location.href='mailto:juancgonzalez0901@gmail.com?subject=Contacto desde tu Portafolio&body=Hola Juan Cruz,%0D%0A%0D%0AMe gustaría ponerme en contacto contigo para...'"
+                data-media-type="banani-button"
+              >
+                <iconify-icon
+                  icon="lucide:mail"
+                  class="icon-xl"
+                ></iconify-icon>
+                juancgonzalez0901@gmail.com
+              </button>
+
+              <div class="social-links">
+                <div class="social-btn" onclick="window.open('https://github.com/JuanCruzGonzalez', '_blank')" data-media-type="banani-button">
+                  <iconify-icon
+                    icon="lucide:github"
+                    class="icon-xl"
+                  ></iconify-icon>
+                </div>
+                <div class="social-btn" onclick="window.open('tel:2615355139', '_blank')" data-media-type="banani-button">
+                  <iconify-icon
+                    icon="lucide:phone"
+                    class="icon-xl"
+                  ></iconify-icon>
+                </div>
+                <div class="social-btn" onclick="window.open('mailto:juancgonzalez0901@gmail.com', '_blank')" data-media-type="banani-button">
+                  <iconify-icon
+                    icon="lucide:mail"
+                    class="icon-xl"
+                  ></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p class="text-muted footer-text">
+            © 2026 Juan Cruz Gonzalez - Front End Developer
+          </p>
         </div>
-      </section>
-    </section>
-  </main>
-
-  <script src="js/scripts.js"></script>
-</body>
-
-</html>
+      </footer>
+    </body>
+  </html>
+  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+</div>
